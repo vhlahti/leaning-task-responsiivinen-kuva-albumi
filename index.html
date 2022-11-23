@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiivinen kuva-albumi</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./layout.css">
+</head>
+<body class="no-touch">
+<section class="wrap">
+    <article class="box">
+        <figure class="boxInner">
+            <img src="./images/7.jpeg" class="gallery_img">
+            <figcaption class="titleBox">Butterfly</figcaption>
+        </figure>
+    </article>
+    <article class="box">
+        <figure class="boxInner">
+            <img src="./images/1.jpeg" class="gallery_img">
+            <figcaption class="titleBox">An old greenhouse</figcaption>
+        </figure>
+    </article>
+    <article class="box">
+        <figure class="boxInner">
+            <img src="./images/2.jpeg" class="gallery_img">
+            <figcaption class="titleBox">Purple wildflowers</figcaption>
+        </figure>
+    </article>
+    <article class="box">
+        <figure class="boxInner">
+            <img src="./images/3.jpeg" class="gallery_img">
+            <figcaption class="titleBox">A birdfeeder</figcaption>
+        </figure>
+    </article>
+    <article class="box">
+        <figure class="boxInner">
+            <img src="./images/10.jpeg" class="gallery_img">
+            <figcaption class="titleBox">Crocus close-up</figcaption>
+        </figure>
+    </article>
+    <article class="box">
+        <figure class="boxInner">
+            <img src="./images/4.jpeg" class="gallery_img">
+            <figcaption class="titleBox">The garden shop</figcaption>
+        </figure>
+    </article>
+    <article class="box">
+        <figure class="boxInner">
+            <img src="./images/5.jpeg" class="gallery_img">
+            <figcaption class="titleBox">Spring daffodils</figcaption>
+        </figure>
+    </article>
+    <article class="box">
+        <figure class="boxInner">
+            <img src="./images/6.jpeg" class="gallery_img">
+            <figcaption class="titleBox">Iris along the path</figcaption>
+        </figure>
+    </article>
+    <article class="box">
+        <figure class="boxInner">
+            <img src="./images/8.jpeg" class="gallery_img">
+            <figcaption class="titleBox">The garden blueprint</figcaption>
+        </figure>
+    </article>
+    <article class="box">
+        <figure class="boxInner">
+            <img src="./images/9.jpeg" class="gallery_img">
+            <figcaption class="titleBox">The patio</figcaption>
+        </figure>
+    </article>
+    <article class="box">
+        <figure class="boxInner">
+            <img src="./images/11.jpeg" class="gallery_img">
+            <figcaption class="titleBox">Bumble bee collecting nectar</figcaption>
+        </figure>
+    </article>
+    <article class="box">
+        <figure class="boxInner">
+            <img src="./images/12.jpeg" class="gallery_img">
+            <figcaption class="titleBox">Winding garden path</figcaption>
+        </figure>
+    </article>
+</section>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+$(function(){
+   // See if this is a touch device
+   if ('ontouchstart' in window)
+   {
+      // Set the correct [touchscreen] body class
+      $('body').removeClass('no-touch').addClass('touch');
+     
+      // Add the touch toggle to show text when tapped
+      $('div.boxInner img').click(function(){
+         $(this).closest('.boxInner').toggleClass('touchFocus');
+      });
+   }
+});
+</script>
+
+</body>
+</html>
